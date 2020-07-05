@@ -16,9 +16,14 @@
         
     
         <div>
-            Movido a<br>
+            Tipo de combustible<br>
         <select multiple>
-
+            <option>Bioetanol</option>
+            <option>Diesel</option>
+            <option>Gasolina corriente</option>
+            <option>Gas natural</option>
+            <option>Diesel plus</option>
+            
         
         </select>
     </div>
@@ -93,10 +98,23 @@
     </div>
         
     <div>
+
+        Moneda<br>
+        <input type="radio" id="euro" name="moneda" value="euro">
+  <label for="euro">Euro</label><br>
+  <input type="radio" id="dolar" name="moneda" value="dolar">
+  <label for="dolar">Dolar</label><br>
+  <input type="radio" id="pesos" name="moneda" value="pesos">
+  <label for="pesos">Pesos colombianos</label>
+    
+    
+    </input><br>
+
         Precio<br>
         <input type="number" min="0" >
     </div>
         
+    <button>Registro</button>
     
     </form>
 </body>
