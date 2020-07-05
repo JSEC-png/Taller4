@@ -10,13 +10,13 @@
     <form>
 <div>
         Identificación de usuario<br>
-        <input type="number" min="0" size="30">
+        <input type="number" min="0" size="30" required>
     
    
 </div>
 <div>
     Pais<br>
-    <select multiple>
+    <select multiple required>
 
         <option>Seleccionar</option>
         <option>Colombia</option>
@@ -34,36 +34,36 @@
     
 <div>
     Apellido<br>
-    <input type="text" size="30" >
+    <input type="text" size="30" required>
     
 </div>
 <div>
     Dirección<br>
-    <input type="text" placeholder="Ejemplo : cra 45 #45-45 casa 45" size="30">
+    <input type="text" placeholder="Ejemplo : cra 45 #45-45 casa 45" size="40" required>
     
 </div>
 <div>
     Nombre de usuario<br>
-    <input type="text" size="30">
+    <input type="text" size="30" required>
     
 </div>
 <div>
     Contraseña<br>
-    <input type="password" size="30">
+    <input type="password" size="30" required>
 </div>
     
 <div>
     Email<br>
-    <input type="email">
+    <input type="email" size="40" placeholder="ejemplo@ejemplo.com" required>
 </div>
     
 <div>
     Telefono<br>
-    <input type="number" min="0" size="30" >
+    <input type="number" min="0" size="30"  required>
     
 </div>
 
-
+<button>Registro</button>
 
     </form>
 </body>
