@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>materializecss</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>      
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+      $('select').formSelect();
+         });
+        </script>
+    <script type="text/javascript">
+    $(function(){
+    $('#fecha').datepicker({
+        format:'dd/mm/yyyy',
+        setDefaultDate: true, 
+        defaultDate: new Date(2020,1,1)
+    });  
+});
+</script>
+<script>
+    $(function(){
+    $('.collapsible').collapsible();
+  });
+</script>
+</head>
+<body>
+    <form method="POST" action="mailto:sebastian.rivera.leon2000@gmail.com" >          
+            <ul class="collapsible">
+                <li class="active">
+                  <div class="collapsible-header teal accent-2"><i class="material-icons">security</i><strong>Identificación</strong></div>
+                  <div class="collapsible-body">
+                    <div class="row">
+                   
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">person_add</i>
+                        <input type="number" max="99999999999" min="1" maxlength="11" required>
+                        <label for="number">Id Vehiculo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s5">
+                      <select required>
+                      <option value="" disabled selected>Usuario</option>
+                      <option value="1">Sebastian Rivera</option>
+                      <option value="2">Juan Estupiñan</option>
+                      <option value="3">Geison Blanco</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="input-field col s5">
+                      <select multiple required>
+                      <option value="" disabled selected>Combustible</option>
+                      <option value="1">Bioetanol</option>
+                      <option value="2">Diesel</option>
+                      <option value="3">Gasolina corriente</option>
+                      <option value="4">Gas natural</option>
+                      <option value="5">Diesel plus</option>           
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="input-field col s5">
+                      <select required>
+                      <option value="" disabled selected>Tipo de vehículo</option>
+                      <option value="1">Sedán</option>
+                      <option value="2">Deportivo</option>
+                      <option value="3">Todoterreno</option>          
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="input-field col s5">
+                      <select required>
+                      <option value="" disabled selected>Estado</option>
+                      <option value="1">Bueno</option>
+                      <option value="2">Medio</option>
+                      <option value="3">Malo</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="input-field col s5">
+                      <select required>
+                      <option value="" disabled selected>Marca</option>
+                      <option value="1">Chevrolet</option>
+                      <option value="2">Mazda</option>
+                      <option value="3">Hyundai</option>
+                      <option value="4">Audi</option>
+                    </select>
+                </div>
+                </div>
+
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header purple accent-1"><i class="material-icons">directions_car</i><strong> Información</strong></div>
+                  <div class="collapsible-body"><div class="row">
+                    <div class="input-field col s5">
+                     
+                      <input id="first_name" type="text" class="validate" maxlength="25" required>
+                      <label for="first_name">Modelo</label>
+                    </div>
+                    <div class="input-field col s5">
+                      <input id="last_name" type="text" class="validate" maxlength="25" required>
+                      <label for="last_name">Año</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <input id="add" type="text" class="validate" maxlength="45" required>
+                      <label for="add">Detalle</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s5">
+                      
+                      <input type="number" class="validate" id="caja" maxlength="20" min="1" max="99999999999" required >
+                      <label for="caja">Caja</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" id="fecha" class="datepicker">
+                        <label for="fecha">Fecha</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s5">
+                      <input type="number" class="validate" id="phone" maxlength="20" min="1" max="99999999999" required >
+                      <label for="phone">Motor</label>
+                    </div>
+                  </div>
+              
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header pink accent-1"><i class="material-icons">attach_money</i><strong> Facturación</strong></div>
+                  <div class="collapsible-body"><div class="row">
+                    <div class="input-field col s5">
+                      <i class="material-icons prefix">monetization_on</i>
+                      <input id="username" type="number" class="validate" required maxlength="20" required>
+                      <label for="username">Precio</label>
+                    </div> 
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s5" >
+                          <blockquote><h6>Moneda</h6> </blockquote>
+                        <fieldset>
+                        <p>
+                            <label>
+                              <input name="group1" type="radio" value="1" checked />
+                              <span>Euro</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" value="2"/>
+                              <span>Dolar</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input  name="group1" type="radio" value="3" />
+                              <span>Pesos</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" value="4"/>
+                              <span>Libras</span>
+                            </label>
+                          </p>
+                        </fieldset>
+                      </div>
+                  </div>
+    
+                  <div class="row">
+                      
+                    <div class="input-field col s5">
+                       
+                      <input id="desc1" type="text" class="validate" required>
+                      <label for="desc1">Descripcion 1</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      
+                    <div class="input-field col s5">
+                       
+                      <input id="desc2" type="text" class="validate" required>
+                      <label for="desc2">Descripcion 2</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      
+                    <div class="input-field col s5">
+                   
+                      <input id="desc3" type="text" class="validate" required>
+                      <label for="desc3">Descripcion 3</label>
+                    </div>
+                  </div></div>
+                </li>
+              </ul>
+              <div class="row">      
+                <div class="input-field col">
+                  <button class="btn-large waves-effect waves-light cyan darken-3" type="submit">Registro <i class="material-icons right">send</i></button>
+              </div>
+            </div> 
+            </form>    
+            
+</body>
+</html>
