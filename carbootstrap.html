@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de autos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class = "border p-3">Registro de autos</h1>
+    <form class = "border p-4" action="mailto:sebastian.rivera.leon2000@gmail.com">
+        <h2>Datos generales del vehículo</h2>
+        <!--Primera fila-->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Id</label>
+                <input type="text" class="form-control" id="inputCity" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Tipo combustible</label>
+                <select id="inputState" class="form-control" required>
+                    <option disabled>combustible</option>
+                    <option>Bioetanol</option>
+                    <option>Diesel</option>
+                    <option>Gasolina corriente</option>
+                    <option>Gas natural</option>
+                    <option>Diesel plus</option>
+
+                </select>
+              </div>            
+        </div>
+        <!--Segunda fila-->
+        <div class="form-row">
+            
+              <div class="form-group col-md-4">
+                <label for="inputState">Tipo Coche</label>
+                <select id="inputState" class="form-control" required>
+                  <option value="1">Sedán</option>
+                  <option value="2">Deportivo</option>
+                  <option value="3">Todoterreno</option>  
+
+
+                </select>
+              </div>     
+              
+              <div class="form-group col-md-4">
+                <label for="inputState">Estado</label>
+                <select id="inputState" class="form-control" required>
+                    <option>Bueno</option>
+                    <option>Regular</option>
+                    <option>Malo</option>                    
+                </select>
+              </div>   
+        </div>
+
+        <!--Tercera fila-->
+        <div class="form-row">
+            
+            <div class="form-group col-md-4">
+              <label for="inputState"> Marca</label>
+              <select id="inputState" class="form-control" required>
+                <option value="1">Chevrolet</option>
+                <option value="2">Mazda</option>
+                <option value="3">Renault</option>  
+                <option value="4">Mercedez</option>  
+                <option value="5">Audi</option>  
+                <option value="3">Jeep</option>  
+              </select>
+            </div>     
+            
+            <div class="form-group col-md-4">
+              <label for="inputState">Usuario</label>
+              <select id="inputState" class="form-control" required>
+                  <option value="1">Juan</option>
+                  <option value="2">Maria</option>
+                  <option value="3">Mario</option>                    
+              </select>
+            </div>   
+      </div>
+      <h2>Datos específicos del vehículo</h2>
+     
+
+      <!--Cuarta fila-->
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Modelo</label>
+          <input type="number" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Año</label>
+          <input type="number" class="form-control" id="inputPassword4" required>
+        </div>
+      </div>
+      
+      <!--Quinta fila-->
+
+      <div class="mb-3">
+        <label for="validationTextarea">Detalle</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+          Otros detalles
+        </div>
+      </div>
+
+      <!--Sexta fila-->
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Caja</label>
+          <input type="number" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Motor</label>
+          <input type="number" class="form-control" id="inputPassword4" required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Fecha de publicación</label>
+            <input type="number" class="form-control" id="inputPassword4" required>
+          </div>
+      </div>
+
+    
+      <h2>Valorización</h2>
+
+      <!--Séptima fila-->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Precio</label>
+          <input type="number" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Moneda</label>
+          <input type="number" class="form-control" id="inputPassword4" required>
+        </div>
+
+        
+      </div>
+
+      <h2>Descripción vehículo</h2>
+
+      <div class="mb-3">
+        <label for="validationTextarea">Descripción 1</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Otros detalles" required></textarea>
+        <div class="invalid-feedback">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="validationTextarea">Descripción 2</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Otros detalles" required></textarea>
+        <div class="invalid-feedback">
+          
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="validationTextarea">Descripción 3</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Otros detalles" required></textarea>
+        <div class="invalid-feedback">
+          
+        </div>
+      </div>
+
+       <button type = "button submit" class="btn btn-primary">Registro</button>
+    </form>
+       
+    
+</body>
+</html>
