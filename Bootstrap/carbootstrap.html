@@ -15,17 +15,17 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputCity">Id</label>
-                <input type="number" class="form-control" id="inputCity" required>
+                <input type="number" min = "1" max="99999999999" class="form-control" id="inputCity" required>
               </div>
               <div class="form-group col-md-4">
                 <label for="inputState">Tipo combustible</label>
                 <select id="inputState" class="form-control" required>
                     <option disabled>combustible</option>
-                    <option>Bioetanol</option>
-                    <option>Diesel</option>
-                    <option>Gasolina corriente</option>
-                    <option>Gas natural</option>
-                    <option>Diesel plus</option>
+                    <option value = "1">Bioetanol</option>
+                    <option value = "2">Diesel</option>
+                    <option value = "3">Gasolina corriente</option>
+                    <option value = "4">Gas natural</option>
+                    <option value = "5">Diesel plus</option>
 
                 </select>
               </div>            
@@ -47,9 +47,9 @@
               <div class="form-group col-md-4">
                 <label for="inputState">Estado</label>
                 <select id="inputState" class="form-control" required>
-                    <option>Bueno</option>
-                    <option>Regular</option>
-                    <option>Malo</option>                    
+                    <option value = "1">Bueno</option>
+                    <option value = "2">Regular</option>
+                    <option value = "3">Malo</option>                    
                 </select>
               </div>   
         </div>
@@ -65,7 +65,7 @@
                 <option value="3">Renault</option>  
                 <option value="4">Mercedez</option>  
                 <option value="5">Audi</option>  
-                <option value="3">Jeep</option>  
+                <option value="6">Jeep</option>  
               </select>
             </div>     
             
@@ -86,11 +86,11 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Modelo</label>
-          <input type="number" class="form-control" id="inputEmail4" required>
+          <input type="text" maxlength = "60" class="form-control" id="inputEmail4" required>
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Año</label>
-          <input type="number" class="form-control" id="inputPassword4" required>
+          <input type="text" maxlength = "4"  class="form-control" id="inputPassword4" required>
         </div>
       </div>
       
@@ -113,12 +113,12 @@
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Motor</label>
-          <input type="number" class="form-control" id="inputPassword4" required>
+          <input type="number"  min = "0" step = "0.01" max="99.99" class="form-control" id="inputPassword4" required>
         </div>
 
         <div class="form-group col-md-6">
             <label for="inputPassword4">Fecha de publicación</label>
-            <input type="text" class="form-control" id="inputPassword4" required>
+            <input type="text" maxlength = "10" class="form-control" id="inputPassword4" required>
           </div>
       </div>
 
@@ -129,28 +129,26 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Precio</label>
-          <input type="number" class="form-control" id="inputEmail4" required>
+          <input type="number"  step = "0.01" min = "0" max="999999.99" class="form-control" id="inputEmail4" required>
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Moneda</label>
-          <input type="text" class="form-control" id="inputPassword4" required>
-        </div>
-
-        
+          <input type="text" maxlength = "3"  class="form-control" id="inputPassword4" required>
+        </div>        
       </div>
 
       <h2>Descripción vehículo</h2>
 
       <div class="mb-3">
         <label for="validationTextarea">Descripción 1</label>
-        <textarea class="form-control" id="validationTextarea" placeholder="Otros detalles" required></textarea>
+        <textarea class="form-control" maxlength = "85" id="validationTextarea" placeholder="Otros detalles" required></textarea>
         <div class="invalid-feedback">
         </div>
       </div>
 
       <div class="mb-3">
         <label for="validationTextarea">Descripción 2</label>
-        <textarea class="form-control" id="validationTextarea" placeholder="Otros detalles" required></textarea>
+        <textarea class="form-control" maxlength = "85"  id="validationTextarea" placeholder="Otros detalles" required></textarea>
         <div class="invalid-feedback">
           
         </div>
@@ -158,7 +156,7 @@
 
       <div class="mb-3">
         <label for="validationTextarea">Descripción 3</label>
-        <textarea class="form-control" id="validationTextarea" placeholder="Otros detalles" required></textarea>
+        <textarea class="form-control" maxlength = "85"  id="validationTextarea" placeholder="Otros detalles" required></textarea>
         <div class="invalid-feedback">
           
         </div>
