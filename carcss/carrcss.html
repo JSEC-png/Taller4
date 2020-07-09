@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carcss</title>
-    <link rel="stylesheet" type="text/css" href="/carrcss.css">
+    <link rel="stylesheet" type="text/css" href="carrcss.css">
 </head>
 <body>
     <form>
 
+        <div id="d1">
         <div>
         Identificación de carro<br>
-        <input type="number">
+        <input type="number" min="0" placeholder="Campo númerico" required>
     </div>
         
     
         <div>
             Tipo de combustible<br>
-        <select multiple>
-            <option>Bioetanol</option>
-            <option>Diesel</option>
-            <option>Gasolina corriente</option>
-            <option>Gas natural</option>
-            <option>Diesel plus</option>
+        <select required>
+            <option value="1"> Bioetanol</option>
+            <option value="2">Diesel</option>
+            <option value="3">Gasolina corriente</option>
+            <option value="4">Gas natural</option>
+            <option value="5">Diesel plus</option>
             
         
         </select>
@@ -30,71 +31,77 @@
 
     <div>
         Tipo de coche<br>
-        <select>
-<option>Sedán</option>
-<option>Deportivo</option>
-<option>Todoterreno</option>
+        <select >
+<option value="1">Sedán</option>
+<option value="2">Deportivo</option>
+<option value="3">Todoterreno</option>
         
         </select>
     </div>
 
     <div>
         Estado<br>
-        <select>
-            <option>Bueno</option>
-            <option>Medio</option>
-            <option>Malo</option>
+        <select >
+            <option value="1">Bueno</option>
+            <option value="2">Medio</option>
+            <option value="3">Malo</option>
         
         </select>
     </div>
 
     <div>
         Marca<br>
-        <select>
-            <option>Chevrolet</option>
-            <option>Mazda</option>
-            <option>Hyundai</option>
-            <option>Audi</option>
+        <select >
+            <option value="1">Chevrolet</option>
+            <option value="2">Mazda</option>
+            <option value="3">Hyundai</option>
+            <option value="4">Audi</option>
         
         </select>
     </div>
-
+</div>
+<div id="d2">
     <div>
         Identificación de usuario<br>
         <select>
-
+            <option value="1">Juan Sebastian Estupiñan</option>
+            <option value="2">Geison Blanco</option>
+            <option value="3">Sebastian Rivera Leon</option>
+            
         
         </select>
     </div>
 
     <div>
     Modelo<br>
-        <input type="text" >
+        <input type="text" maxlength="60" required>
     </div>
         
     <div>
         Año<br>
-        <input type="text" maxlength="4">
+        <input type="text" maxlength="4" required>
     </div>
         
     <div>
         Detalle<br>
-        <input type="text">
-       
+        <input type="text" required>
     </div>
+    </div>
+
+    <div id="d3">
     <div>
         Caja<br>
-        <input type="text">
+        <input type="number" min="0" placeholder="Campo númerico" required>
         
     </div>
     <div>
         Motor<br>
-        <input type="text">
+        <input type="number" min="0" placeholder="Campo númerico" required>
         
     </div>
     <div>
         Fecha de publicación<br>
-        <input type="date">
+        <input type="date" maxlength="10" required>
     </div>
         
     <div>
@@ -111,11 +118,37 @@
     </input><br>
 
         Precio<br>
-        <input type="number" min="0" >
+        <input type="number" min="0" required>
     </div>
+
+
+    <div>
+
+        Descripción del carro<br>
+        <br>
+        Descripción 1<br>
+        <textarea required>  
+
+        </textarea>
+        <br>
+        <br>
+        Descripción 2<br>
+        <textarea required>  
+
+        </textarea>
+        <br>
+        <br>
+        Descripción 2<br>
+        <textarea required>  
+
+        </textarea>
+
         
+    </div>
+</div>   
     <button>Registro</button>
     
+
     </form>
 </body>
 </html>
